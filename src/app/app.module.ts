@@ -6,7 +6,13 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+// Modules
 import { AppRoutingModule } from './app-routing.module';
+
+// Services
+import { Camera } from '@ionic-native/camera/ngx';
+
+// Components
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -16,6 +22,7 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
