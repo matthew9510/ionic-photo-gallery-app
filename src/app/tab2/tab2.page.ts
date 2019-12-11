@@ -10,4 +10,8 @@ export class Tab2Page {
 
   constructor(private photoService: PhotoService){}
 
+  ngOnInit(){
+    this.photoService.loadPhotos();
+  }
+
 }
